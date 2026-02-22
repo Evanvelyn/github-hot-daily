@@ -1,56 +1,44 @@
 #!/usr/bin/env python3
 """
-Fetch GitHub Trending repositories and update README.md
+Fetch GitHub Trending repositories using GitHub API
 """
 import requests
 from datetime import datetime
-from bs4 import BeautifulSoup
+import os
 
-def get_trending_repos(language='', time_range='daily'):
-    """Fetch GitHub Trending repositories"""
-    url = f"https://github.com/trending?since={time_range}"
-    if language:
-        url += f"&spoken_language_code="
-    
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+def get_trending_repos():
+    """Fetch GitHub trending repos via search API"""
+    url = "https://api.github.com/search/repositories"
+    params = {
+        'q': 'created:>2026-02-15',  # Recent repos
+        'sort': 'stars',
+        'order': 'desc',
+        'per_page': 30
     }
     
-    response = requests.get(url, headers=headers)
-    soup = BeautifulSoup(response.text, 'html.parser')
+    headers = {
+        'Accept': 'application/vnd.github.v3+json',
+        'User-Agent': 'GitHub-Trending-Bot'
+    }
     
+    response = requests.get(url, params=params, headers=headers)
+    
+    if response.status_code != 200:
+        print(f"Error: {response.status_code}")
+        print(response.text)
+        return []
+    
+    data = response.json()
     repos = []
-    articles = soup.find_all('article', className='Box-row')
     
-    for article in articles[:30]:  # Get top 30
-        try:
-            # Get repo name and URL
-            repo_link = article.find('a', href=True)
-            if not repo_link:
-                continue
-            repo_name = repo_link.get('href', '').strip('/')
-            
-            # Get description
-            desc_tag = article.find('p')
-            description = desc_tag.get_text().strip() if desc_tag else 'No description'
-            
-            # Get stars
-            star_link = article.find('a', href=True, string=lambda t: t and 'stars' in t.lower())
-            stars = star_link.get_text().strip() if star_link else '0'
-            
-            # Get language
-            lang_tag = article.find('span', itemprop='programmingLanguage')
-            lang = lang_tag.get_text().strip() if lang_tag else 'Unknown'
-            
-            repos.append({
-                'name': repo_name,
-                'description': description,
-                'stars': stars,
-                'language': lang,
-                'url': f"https://github.com/{repo_name}"
-            })
-        except Exception as e:
-            continue
+    for item in data.get('items', []):
+        repos.append({
+            'name': item['full_name'],
+            'description': item['description'] or 'No description',
+            'stars': f"{item['stargazers_count']:,}",
+            'language': item['language'] or 'Unknown',
+            'url': item['html_url']
+        })
     
     return repos
 
@@ -86,7 +74,14 @@ def main():
     
     if not repos:
         print("Failed to fetch trending repos")
-        return
+        # Create a placeholder README
+        repos = [{
+            'name': 'No data',
+            'description': 'Failed to fetch data',
+            'stars': '0',
+            'language': 'N/A',
+            'url': '#'
+        }]
     
     print(f"Found {len(repos)} repos")
     
