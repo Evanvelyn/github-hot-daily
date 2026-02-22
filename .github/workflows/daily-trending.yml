@@ -19,7 +19,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests beautifulsoup4
+          pip install requests
 
       - name: Fetch GitHub Trending
         run: python fetch_trending.py
