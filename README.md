@@ -11,7 +11,7 @@
 | 3 | [Zaneham/BarraCUDA](https://github.com/Zaneham/BarraCUDA) | Open-source CUDA compiler targeting AMD GPUs (and more in th... | 1,276 | C |
 | 4 | [ShinMegamiBoson/OpenPlanter](https://github.com/ShinMegamiBoson/OpenPlanter) | No description | 833 | Python |
 | 5 | [DataExpert-io/ai-engineer-handbook](https://github.com/DataExpert-io/ai-engineer-handbook) | All the links, books, and creators you need to follow to sta... | 780 | Unknown |
-| 6 | [RightNow-AI/picolm](https://github.com/RightNow-AI/picolm) | Run a 1-billion parameter LLM on a $10 board with 256MB RAM | 562 | C |
+| 6 | [RightNow-AI/picolm](https://github.com/RightNow-AI/picolm) | Run a 1-billion parameter LLM on a $10 board with 256MB RAM | 563 | C |
 | 7 | [tnm/zclaw](https://github.com/tnm/zclaw) | Your personal AI assistant at all-in 888KiB (~25KB in app co... | 553 | C |
 | 8 | [Daniel-Dias001/Polymarket-rsi-macd-index-trading-bot](https://github.com/Daniel-Dias001/Polymarket-rsi-macd-index-trading-bot) | Real-time polymarket trading bot that combines monitoring wi... | 543 | TypeScript |
 | 9 | [CraftyGeezer/Kalshi-Polymarket-Ai-bot](https://github.com/CraftyGeezer/Kalshi-Polymarket-Ai-bot) | No description | 491 | Python |
@@ -24,7 +24,7 @@
 | 16 | [dnakov/litter](https://github.com/dnakov/litter) | No description | 289 | Kotlin |
 | 17 | [quoroom-ai/room](https://github.com/quoroom-ai/room) | Autonomous AI agents will earn money — with or without us. I... | 276 | TypeScript |
 | 18 | [paradigmxyz/evmbench](https://github.com/paradigmxyz/evmbench) | A benchmark and harness for finding and exploiting smart con... | 275 | TypeScript |
-| 19 | [vercel-labs/visual-json](https://github.com/vercel-labs/visual-json) | The Visual JSON Editor. Schema-aware, embeddable, extensible... | 266 | TypeScript |
+| 19 | [vercel-labs/visual-json](https://github.com/vercel-labs/visual-json) | The Visual JSON Editor. Schema-aware, embeddable, extensible... | 267 | TypeScript |
 | 20 | [badaramoni/wave-field-llm](https://github.com/badaramoni/wave-field-llm) | An O(n log n) language model architecture using wave equatio... | 257 | Python |
 | 21 | [yeuxuan/openclaw-docs](https://github.com/yeuxuan/openclaw-docs) | openclaw 剖析、拆解、教程在线文档 | 245 | JavaScript |
 | 22 | [hamelsmu/claude-review-loop](https://github.com/hamelsmu/claude-review-loop) | Claude Code plugin: automated code review loop with Codex | 238 | Shell |
@@ -35,7 +35,7 @@
 | 27 | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | No description | 222 | Unknown |
 | 28 | [lopespm/zig-minimal-kernel-x86](https://github.com/lopespm/zig-minimal-kernel-x86) | Minimal x86 Kernel - built in Zig | 214 | Zig |
 | 29 | [NikkeTryHard/zerogravity](https://github.com/NikkeTryHard/zerogravity) | OpenAI, Anthropic, and Gemini-compatible proxy that looks li... | 213 | Dockerfile |
-| 30 | [RaidOwl/homelab-hub](https://github.com/RaidOwl/homelab-hub) | No description | 212 | Svelte |
+| 30 | [RaidOwl/homelab-hub](https://github.com/RaidOwl/homelab-hub) | No description | 213 | Svelte |
 
 ---
 
