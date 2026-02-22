@@ -6,13 +6,13 @@
 
 | # | Project | Description | Stars | Language |
 |---|---------|-------------|-------|----------|
-| 1 | [nicobailon/visual-explainer](https://github.com/nicobailon/visual-explainer) | Agent skill + prompt templates that generate rich HTML pages... | 2,267 | HTML |
+| 1 | [nicobailon/visual-explainer](https://github.com/nicobailon/visual-explainer) | Agent skill + prompt templates that generate rich HTML pages... | 2,268 | HTML |
 | 2 | [nullclaw/nullclaw](https://github.com/nullclaw/nullclaw) | Fastest, smallest, and fully autonomous AI assistant infrast... | 1,590 | Zig |
 | 3 | [Zaneham/BarraCUDA](https://github.com/Zaneham/BarraCUDA) | Open-source CUDA compiler targeting AMD GPUs (and more in th... | 1,276 | C |
 | 4 | [ShinMegamiBoson/OpenPlanter](https://github.com/ShinMegamiBoson/OpenPlanter) | No description | 833 | Python |
 | 5 | [DataExpert-io/ai-engineer-handbook](https://github.com/DataExpert-io/ai-engineer-handbook) | All the links, books, and creators you need to follow to sta... | 780 | Unknown |
 | 6 | [RightNow-AI/picolm](https://github.com/RightNow-AI/picolm) | Run a 1-billion parameter LLM on a $10 board with 256MB RAM | 562 | C |
-| 7 | [tnm/zclaw](https://github.com/tnm/zclaw) | Your personal AI assistant at all-in 888KiB (~25KB in app co... | 552 | C |
+| 7 | [tnm/zclaw](https://github.com/tnm/zclaw) | Your personal AI assistant at all-in 888KiB (~25KB in app co... | 553 | C |
 | 8 | [Daniel-Dias001/Polymarket-rsi-macd-index-trading-bot](https://github.com/Daniel-Dias001/Polymarket-rsi-macd-index-trading-bot) | Real-time polymarket trading bot that combines monitoring wi... | 543 | TypeScript |
 | 9 | [CraftyGeezer/Kalshi-Polymarket-Ai-bot](https://github.com/CraftyGeezer/Kalshi-Polymarket-Ai-bot) | No description | 491 | Python |
 | 10 | [Pickle-Pixel/ApplyPilot](https://github.com/Pickle-Pixel/ApplyPilot) | AI agent that applies to jobs for you. Any site. Any form. | 326 | Python |
@@ -24,7 +24,7 @@
 | 16 | [dnakov/litter](https://github.com/dnakov/litter) | No description | 289 | Kotlin |
 | 17 | [quoroom-ai/room](https://github.com/quoroom-ai/room) | Autonomous AI agents will earn money — with or without us. I... | 276 | TypeScript |
 | 18 | [paradigmxyz/evmbench](https://github.com/paradigmxyz/evmbench) | A benchmark and harness for finding and exploiting smart con... | 275 | TypeScript |
-| 19 | [vercel-labs/visual-json](https://github.com/vercel-labs/visual-json) | The Visual JSON Editor. Schema-aware, embeddable, extensible... | 265 | TypeScript |
+| 19 | [vercel-labs/visual-json](https://github.com/vercel-labs/visual-json) | The Visual JSON Editor. Schema-aware, embeddable, extensible... | 266 | TypeScript |
 | 20 | [badaramoni/wave-field-llm](https://github.com/badaramoni/wave-field-llm) | An O(n log n) language model architecture using wave equatio... | 257 | Python |
 | 21 | [yeuxuan/openclaw-docs](https://github.com/yeuxuan/openclaw-docs) | openclaw 剖析、拆解、教程在线文档 | 245 | JavaScript |
 | 22 | [hamelsmu/claude-review-loop](https://github.com/hamelsmu/claude-review-loop) | Claude Code plugin: automated code review loop with Codex | 238 | Shell |
