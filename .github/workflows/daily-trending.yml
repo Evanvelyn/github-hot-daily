@@ -1,0 +1,31 @@
+name: Daily GitHub Trending
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天 UTC 0 点 (北京时间 8 点)
+  workflow_dispatch:  # 支持手动触发
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4
+
+      - name: Fetch GitHub Trending
+        run: python fetch_trending.py
+
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update trending - ${{ github.event.head_commit.timestamp }}"
+          file_pattern: "*.md"
